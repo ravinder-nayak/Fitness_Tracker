@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Add Workout</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+
+    <form action="/add-workout" method="POST">
+        <h2>Add New Workout</h2>
+        <label for="exercise">Exercise Name:</label>
+        <input type="text" name="exercise" id="exercise" placeholder="e.g., Running" required>
+        
+        <label for="duration">Duration (mins):</label>
+        <input type="number" name="duration" id="duration" placeholder="e.g., 30" required>
+        
+        <label for="calories">Calories Burned:</label>
+        <input type="number" name="calories" id="calories" placeholder="e.g., 250" required>
+        
+        <button type="submit">Add Workout</button>
+        <a href="/dashboard">Back to Dashboard</a>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

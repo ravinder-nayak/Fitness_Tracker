@@ -1,0 +1,46 @@
+<body>
+<h2>Register</h2>
+<form action="/register" method="POST">
+    <label for="text">Text:</label>
+    <input type="text" name="name" placeholder="Enter your name" required />
+    <label for="email">Email::</label>
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <label for="password">Password::</label>
+    <input type="password" name="password" placeholder="Enter your password" required />
+    <button type="submit">Register</button>
+</form>
+<a href="/login">LOGIN</a>
+<style>
+    form{
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: darkolivegreen;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 300px;
+
+    }
+    input[type="text"], input[type="email"],input[type="password"]{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #007;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    a{
+        color: #007;
+    }
+</style>
+</body>
